@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="aiservice" />
         <module name="eureka" />
       </profile>
-      <profile name="Annotation profile for activityService" enabled="true">
+      <profile name="Annotation profile for userService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -24,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="activityService" options="-parameters" />
+      <module name="aiservice" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="userService" options="-parameters" />
     </option>
