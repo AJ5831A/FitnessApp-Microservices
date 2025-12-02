@@ -24,3 +24,8 @@ rabbitmq:
     name: activity.queue
   routing:
     key: activity.tracking
+
+gemini:
+  api:
+    url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+    key: AIzaSyDAC346yXolR2uacff4oy8l6VSWqZaviQg
