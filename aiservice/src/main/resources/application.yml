@@ -4,9 +4,23 @@ spring:
   data:
     mongodb:
       uri: mongodb+srv://aryan24bcs10305_db_user:VIMUu1HjAzKFWTxm@cluster0.xlblsq2.mongodb.net/fitnessrecommendation?appName=Cluster0
+    rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
 server:
   port: 8083
+
+rabbitmq:
+  exchange:
+    name: fitness.exchange
+  queue:
+    name: activity.queue
+  routing:
+    key: activity.tracking
