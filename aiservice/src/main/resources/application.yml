@@ -28,4 +28,4 @@ rabbitmq:
 gemini:
   api:
     url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
-    key: AIzaSyDAC346yXolR2uacff4oy8l6VSWqZaviQg
+    key: AIzaSyC6Mh7Fo-WfQxrLdNo0qwMTchtCYDjeztk
