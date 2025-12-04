@@ -1,11 +1,5 @@
 spring:
   application:
     name: api-gateway
-  cloud:
-    gateway:
-      routes:
-        - id: user-service
-          uri: lb://USER-SERVICE
-
-server:
-  port: 8080
+  config:
+    import: optional:configserver:http://localhost:8888
